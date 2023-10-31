@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  ]
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="registration.html">Registration</a>
+    <a href="mouseevente.html">Mouse events</a>
+    <!-- Add more links for other pages -->
+</div>
+
+
+
+    <div class="container">
+
+        <h1>BMI Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="height">Height (in cm):</label>
+                <input type="text" id="height" placeholder="Enter your height">
+                <input type="range" id="heightRange" min="0" max="300" step="1">
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (in kg):</label>
+                <input type="text" id="weight" placeholder="Enter your weight">
+                <input type="range" id="weightRange" min="0" max="200" step="1">
+            </div>
+            <button id="calculate">Calculate BMI</button>
+            <div id="result">
+                <p>Your BMI is: <span id="bmiResult">--</span></p>
+                <p>You are: <span id="bmiCategory">--</span></p>
+            </div>
+        </div>
+        <div class="performance">
+            <h2>Performance</h2>
+            <p>Last BMI: <span id="lastBMI">--</span></p>
+            <p>BMI Change: <span id="bmiChange">--</span></p>
+        </div>
+        <div class="history">
+            <h2>Previous Calculations</h2>
+            <ul id="historyList">
+                <!-- Previous calculations will be displayed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.calculator:hover {
+    transform: scale(1.05);
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="range"] {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: #555;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result, #lastBMI, #bmiChange {
+    font-size: 20px;
+}
+
+.history, .performance {
+    margin-top: 20px;
+    text-align: left;
+    border-top: 2px solid #444;
+    padding: 20px 0;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#historyList li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Homepage Header Styles */
+header {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+    transition: transform 0.3s;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+.info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Calculator Link Styles */
+a.calculator-link {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+a.calculator-link:hover {
+    background: linear-gradient(45deg, #0056b3, #003a74);
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animation for fading in elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mouse-area {
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mouse-box {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border-radius: 10px;
+    position: absolute;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#event-output {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+

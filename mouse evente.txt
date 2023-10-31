@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mouse Events Page</h1>
+        <p>Explore common mouse events and their effects below.</p>
+    </header>
+    <main>
+        <div class="mouse-area">
+            <div id="mouse-box"></div>
+        </div>
+        <p id="event-output">Mouse events will be displayed here.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mouse Events Page</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

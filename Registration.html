@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-container h1 {
+    font-size: 36px;
+}
+
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    height: 40px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add styles for the CAPTCHA section */
+.captcha-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#captchaaa {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline;
+    font-weight: bold;
+}
+
+input[type="text"]#captcha {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1> Registration</h1>
+            <p>Register </p>
+        </div>
+    </header>
+
+    <section class="registration-form">
+        <div class="form-container">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+
+               <label for="state">State:</label>
+<select id="state" name="state" required>
+    <option value="andhra_pradesh">Andhra Pradesh</option>
+    <option value="arunachal_pradesh">Arunachal Pradesh</option>
+    <option value="assam">Assam</option>
+    <option value="bihar">Bihar</option>
+    <option value="chhattisgarh">Chhattisgarh</option>
+    <option value="goa">Goa</option>
+    <option value="gujarat">Gujarat</option>
+    <option value="haryana">Haryana</option>
+    <option value="himachal_pradesh">Himachal Pradesh</option>
+    <option value="jammu_kashmir">Jammu and Kashmir</option>
+    <option value="jharkhand">Jharkhand</option>
+    <option value="karnataka">Karnataka</option>
+    <option value="kerala">Kerala</option>
+    <option value="madhya_pradesh">Madhya Pradesh</option>
+    <option value="maharashtra">Maharashtra</option>
+    <option value="manipur">Manipur</option>
+    <option value="meghalaya">Meghalaya</option>
+    <option value="mizoram">Mizoram</option>
+    <option value="nagaland">Nagaland</option>
+    <option value="odisha">Odisha</option>
+    <option value="punjab">Punjab</option>
+    <option value="rajasthan">Rajasthan</option>
+    <option value="sikkim">Sikkim</option>
+    <option value="tamil_nadu">Tamil Nadu</option>
+    <option value="telangana">Telangana</option>
+    <option value="tripura">Tripura</option>
+    <option value="uttar_pradesh">Uttar Pradesh</option>
+    <option value="uttarakhand">Uttarakhand</option>
+    <option value="west_bengal">West Bengal</option>
+</select>
+
+
+                <label for="institution">College/Institution:</label>
+                <input type="text" id="institution" name="institution" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+<form id="paymentForm" action="thanks.html">
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="creditCard">Credit Card</option>
+                <option value="debitcard">Debit card</option>
+                <option value="upi">UPI</option>
+            </select>
+            <br><br>
+            <div class="captcha-container">
+                <label for="captcha">Captcha Code:</label>
+                <p id="captchaaa" style="display: inline;"></p>
+            </div>
+            <input type="text" id="captcha" name="captcha" required>
+            <br>
+            <span class="error-message" id="captchaError"></span>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+         
+ 
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+        </div>
+    </footer>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var paymentMethodSelect = document.getElementById('paymentMethod');
+            var qrCodeContainer = document.getElementById('qrcode');
+            var qrCodeImage = document.getElementById('qrcodeImage');
+            var captchaImage = document.getElementById('captchaImage');
+            var captchaInput = document.getElementById('captcha');
+            var captchaError = document.getElementById('captchaError');
+            var captchaaa = document.getElementById('captchaaa');
+
+            function generateUPIQRCode() {
+                var upiUrl = "https://pay.google.com/about/";
+                var qrcode = new QRCode(qrCodeImage, {
+                    text: upiUrl,
+                    width: 128,
+                    height: 128
+                });
+                qrCodeContainer.style.display = 'block';
+            }
+
+            function generateRandomCaptcha() {
+                var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                var captcha = "";
+                for (var i = 0; i < 6; i++) {
+                    var randomIndex = Math.floor(Math.random() * characters.length);
+                    captcha += characters.charAt(randomIndex);
+                }
+                return captcha;
+            }
+
+            function updateCaptcha() {
+                var randomCaptcha = generateRandomCaptcha();
+                captchaaa.textContent = randomCaptcha;
+                captchaInput.value = '';
+                captchaError.style.display = 'none';
+            }
+
+            // Update the CAPTCHA code when the page loads
+            updateCaptcha();
+
+            paymentMethodSelect.addEventListener('change', function () {
+                var selectedMethod = paymentMethodSelect.value;
+                if (selectedMethod === 'upi') {
+                    generateUPIQRCode();
+                } else {
+                    qrCodeContainer.style.display = 'none';
+                }
+
+                // Update the CAPTCHA code when the payment method is changed
+                updateCaptcha();
+            });
+        });
+    </script>
+</body>
+</html>

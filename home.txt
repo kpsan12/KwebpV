@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - Home</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our BMI Calculator</h1>
+        <p>Learn about Body Mass Index (BMI) and its importance in assessing your health.</p>
+    </header>
+    <main>
+        <section class="info">
+            <h2>What is BMI?</h2>
+            <p>Body Mass Index (BMI) is a numerical measure of a person's weight in relation to their height. It is widely used as an indicator of whether a person has a healthy body weight.</p>
+        </section>
+        <section class="info">
+            <h2>Why is BMI Important?</h2>
+            <p>BMI is a useful tool for assessing your health. It helps identify if you are underweight, overweight, or within a healthy weight range. Maintaining a healthy BMI can reduce the risk of various health issues.</p>
+        </section>
+        <section class="info">
+            <h2>Calculating BMI</h2>
+            <p>Our BMI calculator uses your weight and height to calculate your BMI. It provides information on your BMI category and health status.</p>
+        </section>
+        <a href="calculator.html" class="calculator-link">Calculate Your BMI</a>
+    </main>
+    <footer>
+        <p>&copy; 2023 BMI Calculator</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .bat-calc {
+            width: 500px;
+            margin: 50px auto;
+            border: 10px solid #333;
+            border-radius: 100px;
+        }
+
+        .bat-head {
+            background: #333;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
+        }
+
+        .bat-wings {
+            background: #555;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+
+        .bat-legs {
+            background: #333;
+            border-bottom-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+        }
+
+        /* Other bat styling */
+        h1 {
+            font-family: 'BatmanForeverAlternate';
+            color: yellow;
+            text-shadow: 2px 2px black;
+        }
+
+        button {
+            /* Bat button styles */
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="bat-calc">
+        <div class="bat-body">
+            <div class="bat-head">
+                <h1>Bat Calculator</h1>
+            </div>
+
+            <div class="bat-wings">
+                <input type="text" id="result">
+            </div>
+
+            <div class="bat-legs">
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('/')">/</button>
+
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('*')">*</button>
+
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+                <button onclick="insert('-')">-</button>
+
+                <button onclick="clearResult()">C</button>
+                <button onclick="insert('0')">0</button>
+                <button onclick="insert('.')">.</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let result = '';
+
+        function insert(num) {
+            result += num;
+            document.getElementById('result').value = result;
+        }
+
+        function clearResult() {
+            result = '';
+            document.getElementById('result').value = '';
+        }
+
+        function calculate() {
+            document.getElementById('result').value = eval(result);
+            result = '';
+        }
+    </script>
+</body>
+</html>
